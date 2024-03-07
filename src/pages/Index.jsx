@@ -8,21 +8,21 @@ const burgers = [
     name: "Classic Burger",
     description: "A classic burger with cheese, lettuce, tomato, and our special sauce.",
     price: 8.99,
-    image: 'https://images.unsplash.com/photo-1693915862455-a83d49302acc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxjbGFzc2ljJTIwYnVyZ2VyfGVufDB8fHx8MTcwOTgyMzQyOXww&ixlib=rb-4.0.3&q=80&w=1080',
+    image: "https://images.unsplash.com/photo-1693915862455-a83d49302acc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxjbGFzc2ljJTIwYnVyZ2VyfGVufDB8fHx8MTcwOTgyMzQyOXww&ixlib=rb-4.0.3&q=80&w=1080",
   },
   {
     id: 2,
     name: "Bacon Burger",
     description: "A juicy burger with crispy bacon, cheddar cheese, and BBQ sauce.",
     price: 10.99,
-    image: 'https://images.unsplash.com/photo-1561758033-7e924f619b47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxiYWNvbiUyMGJ1cmdlcnxlbnwwfHx8fDE3MDk4MjM0Mjl8MA&ixlib=rb-4.0.3&q=80&w=1080',
+    image: "https://images.unsplash.com/photo-1561758033-7e924f619b47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxiYWNvbiUyMGJ1cmdlcnxlbnwwfHx8fDE3MDk4MjM0Mjl8MA&ixlib=rb-4.0.3&q=80&w=1080",
   },
   {
     id: 3,
     name: "Veggie Burger",
     description: "A delicious veggie patty with avocado, sprouts, and a vegan aioli.",
     price: 9.99,
-    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzA5ODIzNDMwfDA&ixlib=rb-4.0.3&q=80&w=1080',
+    image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzA5ODIzNDMwfDA&ixlib=rb-4.0.3&q=80&w=1080",
   },
 ];
 
@@ -38,6 +38,7 @@ const Index = () => {
   return (
     <Container maxW="container.lg">
       <VStack spacing={8} py={10}>
+        <Image src="https://img.freepik.com/premium-wektory/streszczenie-kolorowy-ptak_621127-276.jpg" alt="Logo" width="150px" marginBottom="2rem" />
         <Heading>Burger Store</Heading>
         <Text>Welcome to our burger store. Select your favorite burger and get it delivered to your door!</Text>
         <Flex direction={{ base: "column", md: "row" }} align="center" justify="center" wrap="wrap">
