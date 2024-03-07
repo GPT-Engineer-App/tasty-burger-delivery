@@ -39,8 +39,8 @@ const Index = () => {
     <Container maxW="container.lg">
       <VStack spacing={8} py={10}>
         <Image src="https://img.freepik.com/premium-wektory/streszczenie-kolorowy-ptak_621127-276.jpg" alt="Logo" width="150px" marginBottom="2rem" />
-        <Heading>Burger Store</Heading>
-        <Text>Welcome to our burger store. Select your favorite burger and get it delivered to your door!</Text>
+        <Heading>Sklep z Burgerami</Heading>
+        <Text>Witamy w naszym sklepie z burgerami. Wybierz swojego ulubionego burgera i zamów dostawę do domu!</Text>
         <Flex direction={{ base: "column", md: "row" }} align="center" justify="center" wrap="wrap">
           {burgers.map((burger) => (
             <Box key={burger.id} p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md" m={2}>
@@ -50,17 +50,17 @@ const Index = () => {
                 <Text>{burger.description}</Text>
                 <Text fontWeight="bold">${burger.price}</Text>
                 <Button leftIcon={<FaShoppingCart />} colorScheme="teal" onClick={() => addToCart(burger)}>
-                  Add to Cart
+                  Dodaj do koszyka
                 </Button>
               </VStack>
             </Box>
           ))}
         </Flex>
         <Box w="full" bg="gray.100" p={5} borderRadius="md">
-          <Heading size="lg">Your Cart</Heading>
+          <Heading size="lg">Twój Koszyk</Heading>
           <Stack spacing={4} mt={4}>
             {cart.length === 0 ? (
-              <Text>Your cart is empty.</Text>
+              <Text>Twój koszyk jest pusty.</Text>
             ) : (
               cart.map((item, index) => (
                 <Flex key={index} justify="space-between" align="center">
@@ -70,11 +70,11 @@ const Index = () => {
               ))
             )}
             <Flex justify="space-between" borderTop="1px" borderColor="gray.300" pt={2} mt={2}>
-              <Text fontWeight="bold">Total:</Text>
+              <Text fontWeight="bold">Suma:</Text>
               <Text fontWeight="bold">${total}</Text>
             </Flex>
             <Button leftIcon={<FaMotorcycle />} colorScheme="orange" isDisabled={cart.length === 0}>
-              Checkout
+              Zamów
             </Button>
           </Stack>
         </Box>
